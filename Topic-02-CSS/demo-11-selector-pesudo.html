@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector - Pesudo</title>
+    <style text="text/css">
+        a {
+            display: block;
+            text-decoration: none;
+            width: 200px;
+            height: 30px;
+            background-color: #cc3366;
+            color: #ffffff;
+            margin: 1px;
+            padding-left: 5px;;
+            line-height: 30px;
+        }
+        /* Pesudo-class */
+        a:hover { background-color: #33cc66;}
+        a:active { background-color: #3366cc;}
+        
+        /* Pesudo-element */
+        p:nth-child(n) { border: 1px solid #cc3366;}
+        p:nth-child(2n) { background-color: #33cc66;}
+    </style>
+</head>
+<body>
+    <h1>Selector - Pesudo</h1>
+
+    <a href="#">This is item 1 of menu</a>
+    <a href="#">This is item 2 of menu</a>
+    <a href="#">This is item 3 of menu</a>
+    <a href="#">This is item 4 of menu</a>
+
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+    <p>This is paragraph 3</p>
+    <p>This is paragraph 4</p>
+    <p>This is paragraph 5</p>
+</body>
+</html>
