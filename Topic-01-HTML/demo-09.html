@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1>Table</h1>
+
+    <table border="1">
+        <tr>
+            <th>STT</th>
+            <th>Họ tên</th>
+            <th>Điểm</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nguyễn Văn A</td>
+            <td>8.0</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Nguyễn Văn B</td>
+            <td>7.5</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Nguyễn Văn C</td>
+            <td>9.0</td>
+    </table>
+
+    <h1>Table colspan & rowspan</h1>
+
+    <table border="1" bgcolor='#cc3366'>
+        <tr>
+            <th>STT</th>
+            <th>Họ tên</th>
+            <th colspan='2'>Điểm</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nguyễn Văn A</td>
+            <td>8.0</td>
+            <td>9.0</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td rowspan='2' background='./img/background.png'>Nguyễn Văn B</td>
+            <td>7.5</td>
+            <td>8.0</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>9.0</td>
+            <td>9.5</td>
+    </table>
+
+    <h1>Table - cellspacing & cellpadding</h1>    
+
+    <table border="1" cellspacing='10' cellpadding='20'>
+        <tr>
+            <th>STT</th>
+            <th>Họ tên</th>
+            <th>Điểm</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nguyễn Văn A</td>
+            <td>8.0</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Nguyễn Văn B</td>
+            <td>7.5</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Nguyễn Văn C</td>
+            <td>9.0</td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <h1>Table format</h1>
+
+    <table border=1>
+        <caption style='color:#cc3366; font-size: large;'>Danh sách sinh viên</caption>
+        <col style='background-color: #cc3366' />
+        <col span='2' style='background-color: #ffcc00' />
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ tên</th>
+                <th>Điểm</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Văn A</td>
+                <td>8.0</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn Văn B</td>
+                <td>7.5</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nguyễn Văn C</td>
+                <td>9.0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan='2' align='center'>Tổng trung bình</td>
+                <td>8.5</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
