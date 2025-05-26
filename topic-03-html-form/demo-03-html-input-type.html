@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form - input type</title>
+</head>
+<body>
+    <h1>HTML input type</h1>
+    <form name="frmMain01" action="#" method="get">
+        <div>
+            <Label for="hdID">Session ID</Label>
+            <input type="hidden" name="hdID" id="hdID" value="112233" />
+        </div>
+        <div>
+            <span>Username:</span>
+            <input type="text" name="txtUS" id="txtUS" placeholder="input username" required />    
+        </div>
+        <div>
+            <span>Password:</span>
+            <input type="password" name="txtPW" id="txtPW" placeholder="input password" required />
+        </div>
+        <div>
+            <span>Role for login:</span>
+            <div>
+                <input type="radio" name="rdRole" id="rdRoleUser" value="user" checked required />
+                <label for="rdRoleUser">User</label>
+            </div>
+            <div>
+                <input type="radio" name="rdRole" id="rdRoleAdmin" value="admin" required/>
+                <label for="rdRoleAdmin">Admin</label>
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" name="chkRemember" id="chkRemember" value="true" />
+            <label for="chkRemember">Remember password</label>
+        </div>
+        <div>
+            <p>Choose theme</p>
+            <div>
+                <input type="checkbox" name="chkLight" id="chkLight" value="light" />
+                <label for="chkLight">Light theme</label>
+            </div>
+            <div>
+                <input type="checkbox" name="chkDark" id="chkDark" value="dark" />
+                <label for="chkDark">Dark theme</label>
+            </div>
+        </div>
+        <div>
+            <label for="txtComment">Comment</label>
+            <textarea name="txtComment" id="comment"></textarea>
+        </div>
+        
+        <input type="submit" />
+    </form>
+</body>

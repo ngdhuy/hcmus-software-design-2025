@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form - input type - part 02</title>
+</head>
+<body>
+    <h1>Advance HTML input type</h1>
+    <form name="frmMain" action="#" method="get">
+        <div>
+            <label for="txtColor">Color</label>
+            <input type="color" name="txtColor" />
+        </div>
+        <div>
+            <label for="txtDate">Date</label>
+            <input type="date" name="txtDate" />
+        </div>
+        <div>
+            <label for="txtDateTimt">Date time</label>
+            <input type="datetime-local" name="txtDateTimt" />
+        </div>
+        <div>
+            <label for="txtMonth">Month</label>
+            <input type="month" name="txtMonth" />
+        </div>
+        <div>
+            <label for="txtTime">Time</label>
+            <input type="time" name="txtTime" />
+        </div>
+        <div>
+            <label for="txtWeek">Week</label>
+            <input type="week" name="txtWeek" />
+        </div>
+        <div>
+            <label for="txtMail">Mail</label>
+            <input type="mail" name="txtMail" />
+        </div>
+        <div>
+            <label for="txtTel">Telephone</label>
+            <input type="tel" name="txtTel" />
+        </div>
+        <div>
+            <label for="txtRange">Range</label>
+            <input type="range" name="txtRange" min="0" max="100" />
+        </div>
+        <div>
+            <label for="txtSearch">Search</label>
+            <input type="search" name="txtSearch" />
+        </div>
+
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+        <input type="button" value="Click me" onclick="click_me()" />
+    </form>
+    <script type="text/javascript">
+        function click_me() {
+            alert("Hello word");
+        }
+    </script>
+</body>
+</html>
